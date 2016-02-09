@@ -1,2 +1,1 @@
-# amp
-Desarrollo web con PHP y MySQL
+# Desarrollo web con PHP y MySQL
