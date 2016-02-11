@@ -313,9 +313,11 @@ DROP TABLE IF EXISTS decimales;
 CREATE TABLE decimales(
   precio FLOAT(6,2)
 );
+~~~~
 
 Como vimos anteriormente, se pueden insertar valores entre -9999,99 y 9999,99. Inserte algunos y vea el resultado de una consulta de selección:
 
+~~~~ {.sql}
 USE pruebas;
 
 INSERT INTO decimales VALUES(29.99);
@@ -324,6 +326,27 @@ INSERT INTO decimales VALUES(199.994);
 INSERT INTO decimales VALUES(199.995);
 
 SELECT * FROM decimales;
+~~~~
+
+Para el siguiente ejemplo, cree una nueva tabla:
+
+~~~~ {.sql}
+USE pruebas;
+
+DROP TABLE IF EXISTS decimales2;
+CREATE TABLE decimales2(
+  precio FLOAT(10,5)
+);
+~~~~
+
+Inserte un valor:
+
+~~~~ {.sql}
+USE pruebas;
+
+INSERT INTO
+  decimales2
+VALUES(3835.38000);”
 ~~~~
 
 Tipos de datos: fechas y horas
