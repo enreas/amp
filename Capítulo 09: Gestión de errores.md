@@ -9,7 +9,7 @@ En la siguiente página hemos indicado, a propósito, una clave de acceso incorr
 $videoteca = new mysqli(
   'localhost',
   'usuario',
-  'clave',
+  '',
   'videoteca'
 );
 
@@ -48,7 +48,7 @@ Sin embargo, en lugar de sobre un error en la conexión, se avisa de un error en
 $videoteca = new mysqli(
   'localhost',
   'usuario',
-  'clave',
+  '',
   'videoteca'
 );
 
