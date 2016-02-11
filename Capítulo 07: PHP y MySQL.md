@@ -9,7 +9,7 @@ Podemos realizar la conexión con MySQL así:
 $conexion = mysqli_connect(
   'localhost',
   'root',
-  'clave',
+  '',
   'videoteca'
 );
 
@@ -29,7 +29,7 @@ Pero también usando la versión orientada a objetos:
 $videoteca = new mysqli(
   'localhost',
   'root',
-  'clave',
+  '',
   'videoteca'
 );
 
@@ -130,7 +130,7 @@ La versión orientada a objetos completa del ejemplo es la siguiente:
 $videoteca = new mysqli(
   'localhost',
   'root',
-  'clave',
+  '',
   'videoteca'
 );
 
