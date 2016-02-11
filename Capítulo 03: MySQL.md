@@ -64,6 +64,75 @@ El borrado de una tabla es una operación muy sencilla, basta con indicar el nom
 DROP TABLE IF EXISTS individuo;
 ~~~~
 
+Transacciones
+---------------------
+
+Cree una tabla muy sencilla para los saldos de los clientes del banco dentro de la base de datos de pruebas utilizando las siguientes instrucciones:
+
+~~~~ {.sql}
+USE pruebas;
+
+DROP TABLE IF EXISTS cuenta;
+CREATE TABLE cuenta(
+  idcliente INT NOT NULL,
+  saldo DOUBLE NOT NULL DEFAULT 0
+)
+ENGINE = InnoDB;
+~~~~
+
+A continuación, inserte un par de valores para almacenar el saldo de dos clientes:
+
+~~~~ {.sql}
+USE pruebas;
+
+INSERT INTO cuenta VALUES(212, 220.50);
+INSERT INTO cuenta VALUES(555, 1200.00);
+~~~~
+
+Para realizar la transferencia han de completarse dos pasos: la cantidad transferida debe sumarse en la cuenta de destino y restarse de la cuenta que origina la transferencia. Una operación tras la otra:
+
+~~~~ {.sql}
+USE pruebas;
+
+UPDATE
+  cuenta
+SET
+  saldo = saldo + 300
+WHERE
+  idcliente = 212;
+
+UPDATE
+  cuenta
+SET
+  saldo = saldo - 300
+WHERE
+  idcliente = 555;
+~~~~
+
+La gestión de las transacciones se realiza mediante unas instrucciones muy sencillas. Siguiendo con el ejemplo, la transferencia se realizaría de la siguiente forma:
+
+~~~~ {.sql}
+USE pruebas;
+
+START TRANSACTION;
+
+UPDATE
+  cuenta
+SET
+  saldo = saldo + 300
+WHERE
+  idcliente = 212;
+
+UPDATE
+  cuenta
+SET
+  saldo = saldo - 300
+WHERE
+  idcliente = 555;
+
+COMMIT;
+~~~~
+
 Tipos de datos: texto
 ---------------------
 
