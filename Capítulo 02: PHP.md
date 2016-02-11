@@ -3,7 +3,7 @@ Página HTML
 
 Vamos a comenzar viendo un ejemplo de página HTML. Su código es el siguiente:
 
-~~~~ {.html4strict}
+~~~~ {.html}
 <html>
   <head>
     <title>Prueba</title>
