@@ -9,6 +9,5 @@ Podéis encontrarlo en <a title="Por si tienes un Kindle" href="http://www.amazo
 Aquí tenéis el código de los ejemplos que acompañan al libro.
 
 Un saludo,
-
 --
 <a href="https://twitter.com/enreas" title="@enreas">@enreas</a>
