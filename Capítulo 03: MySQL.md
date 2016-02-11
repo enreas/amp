@@ -303,6 +303,29 @@ INSERT INTO enteros VALUES(10000);
 
 Compruebe usted mismo el resultado de consultar ahora los datos de la tabla. MySQL también nos permite utilizar números decimales en los campos de las tablas.
 
+Tipos de datos: números en coma flotante
+----------------------------------------
+
+~~~~ {.sql}
+USE pruebas;
+
+DROP TABLE IF EXISTS decimales;
+CREATE TABLE decimales(
+  precio FLOAT(6,2)
+);
+
+Como vimos anteriormente, se pueden insertar valores entre -9999,99 y 9999,99. Inserte algunos y vea el resultado de una consulta de selección:
+
+USE pruebas;
+
+INSERT INTO decimales VALUES(29.99);
+INSERT INTO decimales VALUES(30);
+INSERT INTO decimales VALUES(199.994);
+INSERT INTO decimales VALUES(199.995);
+
+SELECT * FROM decimales;
+~~~~
+
 Tipos de datos: fechas y horas
 ------------------------------
 
