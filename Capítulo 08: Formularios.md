@@ -3,7 +3,7 @@ Envío de datos
 
 Vamos a crear un formulario para enviar a otra página la información necesaria para dar de alta un nuevo género cinematográfico. El código es el siguiente:
 
-~~~~ {.html4strict}
+~~~~ {.html}
 <html>
 
   <head>
@@ -185,7 +185,7 @@ function comprobar_valores(){
 
 Lo utilizaremos desde la página PHP así:
 
-~~~~ {.html4strict}
+~~~~ {.html}
 <html>
 
   <head>
