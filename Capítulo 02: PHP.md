@@ -67,7 +67,7 @@ Es recomendable que introduzcamos comentarios en nuestras páginas PHP. Estos co
 La hora es: <?= date("H:i:s") ?>.
 ~~~~
 
-Los comentarios de párrafo comienzan con la pareja de caracteres **\*** y terminan con ***/**:
+Los comentarios de párrafo comienzan con la pareja de caracteres **\*** y terminan con **\*/**:
 
 ~~~~ {.php}
 <?php
