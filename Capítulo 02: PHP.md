@@ -67,7 +67,7 @@ Es recomendable que introduzcamos comentarios en nuestras páginas PHP. Estos co
 La hora es: <?= date("H:i:s") ?>.
 ~~~~
 
-Los comentarios de párrafo comienzan con la pareja de caracteres **/\*** y terminan con **\*/**:
+Los comentarios de párrafo comienzan con la pareja de caracteres **\*** y terminan con ***/**:
 
 ~~~~ {.php}
 <?php
@@ -141,7 +141,7 @@ $hora = date("H:i:s");
 ?>
 ~~~~
 
-El código anterior almacena en la variable **\$hora** la hora tal y como la mostrábamos en los ejemplos anteriores. Las siguientes líneas son ejemplos de declaraciones correctas:
+El código anterior almacena en la variable **$hora** la hora tal y como la mostrábamos en los ejemplos anteriores. Las siguientes líneas son ejemplos de declaraciones correctas:
 
 ~~~~ {.php}
 $hora = date("H:i:s");
