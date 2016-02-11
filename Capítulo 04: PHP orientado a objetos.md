@@ -230,7 +230,7 @@ La siguiente página PHP cargará el contenido de la tabla que acabamos de crear
 $conexion = mysqli_connect(
   'localhost',
   'root',
-  'clave',
+  '',
   'videoteca'
 );
 
@@ -290,7 +290,7 @@ Si se fija en el listado de la página podrá comprobar que el código PHP está
 $conexion = mysqli_connect(
   'localhost',
   'root',
-  'clave',
+  '',
   'videoteca'
 );
 
@@ -355,7 +355,7 @@ function cargar_generos(){
   $conexion = mysqli_connect(
     'localhost',
     'root',
-    'clave',
+    '',
     'videoteca'
   );
 
@@ -437,7 +437,7 @@ class clsGeneros{
     $conexion = mysqli_connect(
       'localhost',
       'root',
-      'clave',
+      '',
       'videoteca'
     );
 
