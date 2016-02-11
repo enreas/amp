@@ -218,7 +218,7 @@ $cadena = "Un año tiene $i meses.";
 ?>
 ~~~~
 
-Tras ejecutar estas dos líneas, el contenido de la variable **\$cadena** será "Un año tiene 12 meses.".
+Tras ejecutar estas dos líneas, el contenido de la variable **$cadena** será "Un año tiene 12 meses.".
 El tercer tipo de cadenas, en bloque, es muy similar al segundo tipo, aunque son más adecuadas para cadenas de gran longitud:
 
 ~~~~ {.php}
@@ -536,7 +536,7 @@ echo 'Tipo de $i: ' . gettype($i);
 ?>
 ~~~~
 
-Como puede comprobar, antes de la concatenación **\$i** es de tipo entero (integer), pero después pasa a ser de tipo cadena (string). Para liar aún más las cosas, resulta que también podemos hacer esto otro:
+Como puede comprobar, antes de la concatenación **$i** es de tipo entero (integer), pero después pasa a ser de tipo cadena (string). Para liar aún más las cosas, resulta que también podemos hacer esto otro:
 
 ~~~~ {.php}
 <?php
@@ -560,7 +560,7 @@ echo gettype($entero);
 ?>
 ~~~~
 
-Tenga precaución, sin embargo. En el ejemplo anterior **\$entero** contendrá el valor entero 10, pero si **\$cadena** hubiese contenido la cadena "texto", el resultado sería que **\$entero** contendría el valor 0:
+Tenga precaución, sin embargo. En el ejemplo anterior **$entero** contendrá el valor entero 10, pero si **$cadena** hubiese contenido la cadena "texto", el resultado sería que **$entero** contendría el valor 0:
 
 ~~~~ {.php}
 <?php
